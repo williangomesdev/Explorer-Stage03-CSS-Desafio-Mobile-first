@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::root {
+  --gray-dark: #5c6981;
+  --gray-medium: #8e9aaf;
+  --gray-light: #cbc0d3;
+  --white-medium: #Feeaf;
+  --white-light: #eff1ff;
+}
