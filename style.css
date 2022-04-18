@@ -49,6 +49,62 @@ header .logo-title p {
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-.page p.title-ice-cream {
+main {
+  background: var(--white-light);
+  text-align: center;
+}
+
+main .page {
+  padding: 1.4rem 3.2rem 6rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 6.3rem;
+}
+
+main p.text-main-ice-cream {
   font-family: "Palanquin", sans-serif;
+  color: #23053a;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.ice-cream1,
+.ice-cream2,
+.ice-cream3,
+.ice-cream4 {
+  width: 32rem;
+}
+
+.ice-cream1,
+.ice-cream3 {
+  height: 25rem;
+}
+
+.ice-cream2,
+.ice-cream4 {
+  height: 45rem;
+}
+
+.ice-cream1 {
+  background-image: url(./images/sorvete1.png);
+}
+
+.ice-cream2 {
+  background-image: url(./images/sorvete2.png);
+}
+
+.ice-cream3 {
+  background-image: url(./images/sorvete3.png);
+}
+
+.ice-cream4 {
+  background-image: url(./images/sorvete4.png);
 }
