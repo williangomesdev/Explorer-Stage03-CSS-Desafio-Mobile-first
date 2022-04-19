@@ -8,29 +8,81 @@
   --gray-dark: #5c6981;
   --gray-medium: #8e9aaf;
   --gray-light: #cbc0d3;
-  --white-medium: #Feeaf;
+  --white-medium: #feeafa;
   --white-light: #eff1ff;
   font-size: 62.5%;
   font-style: normal;
   font-weight: 400;
 }
 
+@keyframes levitate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1.2rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes totopdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-1.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes todowntop {
+  0% {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 body {
   font-family: "Staatliches", cursive;
+  max-width: 38.4rem;
+  margin: 0 auto;
 }
 
 header {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
   text-align: center;
   padding: 3.2rem 0 2.9rem;
   background: var(--gray-medium);
+  animation: totopdown 0.7s;
 }
 
-header img {
+header .logo {
+  margin: auto;
+  background-image: url(./images/logo2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   width: 13.7rem;
   height: 13.7rem;
   padding-bottom: 3.2rem;
+  animation: levitate 3s infinite ease-in-out;
   filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+  transition: 0.2s all ease;
+}
+
+header .logo:hover {
+  background-image: url(./images/logo1.svg);
 }
 
 header .logo-title {
@@ -41,6 +93,7 @@ header .logo-title {
   height: 4.9rem;
   background: var(--gray-light);
 }
+
 header .logo-title p {
   font-size: 40px;
   line-height: 34px;
@@ -62,12 +115,12 @@ main .page {
   gap: 6.3rem;
 }
 
-main p.text-main-ice-cream {
+main .text-main-ice-cream {
+  text-align: center;
   font-family: "Palanquin", sans-serif;
   color: #23053a;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.5rem;
-  text-align: center;
 }
 
 .image-wrapper {
@@ -80,7 +133,18 @@ main p.text-main-ice-cream {
 .ice-cream2,
 .ice-cream3,
 .ice-cream4 {
+  border-radius: 2rem;
+  position: relative;
   width: 32rem;
+  transition: 0.4s;
+  animation: todowntop 0.7s;
+}
+
+.ice-cream1:hover,
+.ice-cream2:hover,
+.ice-cream3:hover,
+.ice-cream4:hover {
+  filter: brightness(.5);
 }
 
 .ice-cream1,
@@ -108,3 +172,23 @@ main p.text-main-ice-cream {
 .ice-cream4 {
   background-image: url(./images/sorvete4.png);
 }
+
+.label-ice-cream {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  width: 11.2rem;
+  height: 3.5rem;
+  background: var(--white-medium);
+  border-radius: 2rem;
+  padding: 0rem 2.4rem;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.05em;
+  color: #4a4e69;
+  filter: brightness(1);
+  animation-delay: 7s;
+  animation: totopdown 1.5s;
+}
+
