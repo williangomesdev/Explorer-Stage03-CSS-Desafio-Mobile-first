@@ -34,11 +34,14 @@ Desafios proposto pelo programa de formação explorer da rocketseat, onde foi p
 <img src="https://img.shields.io/badge/Html5-05122A?style=flat&logo=html5" alt="html5 Badge" height="25">&nbsp;
 
 ## Imagens
-<div style="display:flex;">
-<p align="center"><img src="./gitImg/127.0.0.1_5500_Mobile_First_index.html(Moto G4).png" width="200"></p>&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<p align="center"><img src="./gitImg/127.0.0.1_3000_Mobile_First_index.html (1).png" width="200"></p>
-</div>
+
+<img align="top" src="./gitImg/127.0.0.1_5500_Mobile_First_index.html(Moto G4).png" width="200">&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="./gitImg/127.0.0.1_3000_Mobile_First_index.html (1).png" width="200">
+
+
+
+
 
 
 ## Autor
