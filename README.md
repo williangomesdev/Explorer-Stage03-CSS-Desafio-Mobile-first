@@ -6,6 +6,14 @@
 	Projeto desenvolvido na  formação explorer da rocketseat
 </h3>&nbsp;
 
+<p align="center">
+	<img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square"/>
+	<img src="https://img.shields.io/github/repo-size/williangomesdev/Explorer-Stage03-CSS-Desafio-Mobile-first ?color=green"/>
+</p>
+
+<p align="center"
+</p>
+
 
 <h4 align="center">
 	Status: 🚀 Finalizado
